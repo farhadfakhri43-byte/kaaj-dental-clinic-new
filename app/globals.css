@@ -1,0 +1,111 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 1rem;
+
+  /* Ivory / warm white */
+  --background: oklch(0.985 0.006 85);
+  --foreground: oklch(0.23 0.02 265);
+
+  --card: oklch(0.995 0.004 85);
+  --card-foreground: oklch(0.23 0.02 265);
+
+  --popover: oklch(0.995 0.004 85);
+  --popover-foreground: oklch(0.23 0.02 265);
+
+  /* Deep navy */
+  --primary: oklch(0.27 0.045 260);
+  --primary-foreground: oklch(0.985 0.006 85);
+
+  --secondary: oklch(0.955 0.008 85);
+  --secondary-foreground: oklch(0.27 0.045 260);
+
+  --muted: oklch(0.955 0.008 85);
+  --muted-foreground: oklch(0.52 0.02 265);
+
+  /* Champagne gold */
+  --accent: oklch(0.8 0.09 82);
+  --accent-foreground: oklch(0.27 0.045 260);
+  --gold: oklch(0.76 0.1 80);
+  --gold-soft: oklch(0.9 0.05 85);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.012 85);
+  --input: oklch(0.9 0.012 85);
+  --ring: oklch(0.76 0.1 80);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'ss01', 'cv01';
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Selection */
+::selection {
+  background: var(--gold-soft);
+  color: var(--primary);
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklch, var(--primary) 25%, transparent);
+  border-radius: 999px;
+  border: 3px solid var(--background);
+}

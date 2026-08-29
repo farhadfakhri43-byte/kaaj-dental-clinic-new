@@ -55,10 +55,8 @@ async function loadState() {
       doctors: saved.doctors ?? defaults.doctors,
     }
   } catch {
-    const value = initialState()
-    await persist(value)
-    return value
-  }
+  return initialState()
+}
 }
 
 async function getState() {

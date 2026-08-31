@@ -113,28 +113,28 @@ export type Doctor = {
 
 export const doctors: Doctor[] = [
   {
-    name: 'Dr. Omar Nazari',
-    specialty: 'Implantology & Oral Surgery',
+    name: 'Dr. Bashir ',
+    specialty: '',
     experience: '5+ years experience',
     image: '/images/doctor-1.png',
   },
   {
-    name: 'Dr. Sahar Amiri',
-    specialty: 'Cosmetic & Restorative Dentistry',
+    name: 'Dr. Ali',
+    specialty: '',
     experience: '5+ years experience',
     image: '/images/doctor-2.png',
   },
   {
-    name: 'Dr. Yusuf Karimi',
-    specialty: 'Orthodontics',
+    name: 'Dr. Emal',
+    specialty: '',
     experience: '5+ years experience',
     image: '/images/doctor-3.png',
   },
   {
-    name: 'Dr. Lina Rahimi',
-    specialty: 'Pediatric Dentistry',
-    experience: '5+ years experience',
-    image: '/images/doctor-4.png',
+    name: '',
+    specialty: '',
+    experience: '',
+    image: '',
   },
 ]
 

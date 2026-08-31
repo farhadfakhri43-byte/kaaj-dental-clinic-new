@@ -41,7 +41,7 @@ export const defaultServices: ManagedService[] = services.map(
 export const defaultClinicGallery: ClinicGalleryItem[] = [
   {
     id: 'treatment-room',
-    src: '/images/clinic-experience/treatment-room.jpeg',
+   src: '/images/clinic-experience/treatment-room.JPG',
     alt: 'A modern KAAJ Dental Clinic treatment room with a dental chair and clinical equipment',
     label: 'Treatment room',
     objectPosition: '54% 54%',
@@ -50,7 +50,7 @@ export const defaultClinicGallery: ClinicGalleryItem[] = [
   },
   {
     id: 'reception-lounge',
-    src: '/images/clinic-experience/reception-lounge.jpeg',
+   src: '/images/clinic-experience/reception-lounge.JPG',
     alt: 'KAAJ Dental Clinic reception lounge with clinic branding, seating, and welcoming decor',
     label: 'Reception lounge',
     objectPosition: '50% 56%',
@@ -59,7 +59,7 @@ export const defaultClinicGallery: ClinicGalleryItem[] = [
   },
   {
     id: 'waiting-lounge',
-    src: '/images/clinic-experience/waiting-area.jpeg',
+    src: '/images/clinic-experience/waiting-area.JPG',
     alt: 'KAAJ Dental Clinic waiting lounge with navy seating and gold-accented tables',
     label: 'Waiting lounge',
     objectPosition: '50% 57%',
@@ -68,7 +68,7 @@ export const defaultClinicGallery: ClinicGalleryItem[] = [
   },
   {
     id: 'clinic-hallway',
-    src: '/images/clinic-experience/clinic-hallway.jpeg',
+    src: '/images/clinic-experience/clinic-hallway.JPG',
     alt: 'A clean KAAJ Dental Clinic hallway leading to private treatment units',
     label: 'Clinic hallway',
     objectPosition: '50% 44%',

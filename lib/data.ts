@@ -113,13 +113,13 @@ export type Doctor = {
 
 export const doctors: Doctor[] = [
   {
-    name: 'Dr. Bashir ',
+    name: 'Dr. Ali ',
     specialty: '',
     experience: '5+ years experience',
     image: '/images/doctor-1.png',
   },
   {
-    name: 'Dr. Ali',
+    name: 'Dr. Bashir',
     specialty: '',
     experience: '5+ years experience',
     image: '/images/doctor-2.png',
